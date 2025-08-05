@@ -1,0 +1,49 @@
+The aim of this competition is to create a model that predicts which passengers survived the Titanic shipwreck.
+
+Use 1 if the passenger survived and 0 if the passenger did not survive.
+
+Logs:
+So the first thing I did was to download the train.csv and test.csv files as they contain our training and testing data. Normally, I would need to split the training data in a 80%-20% ratio, but I can skip that part since I was provided with testing data.
+From there, I moved on to open the files in a Microsoft Excel spreadsheet, just to get a feel of the data, see how big it is, if there are any missing data in the columns and rows. I could manage this because the data wasn't much, just 892 rows and 12 columns, plus I was just browsing through the data, not really looking at anything specific.
+
+Now after exploring the data, this is where the trick begins. I monitored each row and column, each cell of data to understand which features I would need, because not every column in the data is needed for this analysis. So the features I selected and the reasons why I selected them are as follows:
+    1. Pclass (Ticket Class): During the era when the Titanic was around, segregation by class was a norm. This    meant that more attention and priority were given to the upper class (the more richer ones) than the lower class (the bottom of the chain).
+    2. Sex (Gender): Just like with segregation by class, in situations like the Titanic sinking, females and children were also given more priority than men, same reason why females and children get drafted into the army. At the time, the men were expected to provide for and protect their families, even sacrificing themselves for the betterment of their families if the choices boiled down to that.
+    3. Age: Same reason for sex.
+    4. Sibsp (number of siblings/spouses aboard): Family size matters, especially during a crisis. It might be easier for solo passengers or passengers who were travelling in groups of at most 3 to escape/evacuate, but large families may have some troubles, like staying together or slowed evacuation. These also affect the survival rates, where more children might die, or they escape and the parents end up dead instead.
+    5. Parch (number of parents/children aboard): Parents with children behaved differently than solo travelers, in efforts to save their children. This also affects the survival rates.
+    6. Fare: Higher fare = better cabin location = closer to lifeboats. This also goes to show that the ticket class is also a determinant, because usually, the 1st class tickets were tied to premium cabins which also bumped up the prices of these tickets.
+    7. Embarked (Port of Embarkation): From the data provided, there are 3 ports: Cherbourg, Queenstown, Southampton. According to historical data, some ports had more of upper class and some more of lower class, so in a way it kind of serves as a determinant.
+Next thing that I did after this was to plot each feature against the
+
+
+Action plan
+1. Import libraries
+2. Load the dataset
+3. Perform data cleaning:
+    For train.csv:
+        a. Drop the "Cabin" column
+        b. Find columns with empty data and drop the rows
+        c. Drop these columns: "Survived", "PassengerId", "Name", "Ticket"
+    For test.csv:
+        a. Drop the "Cabin" column
+        b. Drop these columns: "PassengerId", "Name", "Ticket"
+        c. Impute values for missing data
+    After all this, output the clean data (train_clean, test_clean)
+4. Encode categorical values: 1 = "Male", 0 = "Female"; 0 = "S", 1 = "C", 2 = "Q"
+5. Plot graphs of each feature against the target
+6. Extract features for X_train, X_test, y_train and y_test
+7. Test for optimal number of max_leaf_nodes and n_estimators.
+8. Build and fit the model.
+9. Make predictions.
+10. Calculate MAE score
+11. Optimize the model (test other models, use pipelines, check for cross validation).
+
+
+
+#Prepare the features
+train_features = df.drop(columns=['PassengerId', 'Name', 'Ticket', 'Survived'])
+test_features = df1.drop(columns=['PassengerId', 'Name', 'Ticket'])
+X_train = train_features
+X_test = test_features
+y_train = df['Survived']
