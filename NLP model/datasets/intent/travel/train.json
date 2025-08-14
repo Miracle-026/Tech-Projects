@@ -1,0 +1,18 @@
+[
+    {
+        "text": "Book a flight to Paris",
+        "intent": "book_flight"
+    },
+    {
+        "text": "Cancel my reservation",
+        "intent": "cancel_booking"
+    },
+    {
+        "text": "Find a hotel in London",
+        "intent": "book_hotel"
+    },
+    {
+        "text": "Check flight status to New York",
+        "intent": "check_flight_status"
+    }
+]

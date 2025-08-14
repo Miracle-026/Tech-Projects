@@ -1,0 +1,19 @@
+# Configuration file for online intent classification model
+
+# Model parameters
+memory_size: 1000
+learning_rate: 0.01
+batch_size: 32
+epochs: 1
+device: "cpu"
+
+# Dataset settings
+domains:
+  - travel
+  - customer_service
+
+# Logging and saving
+verbose: true
+save_dir: "results/models/"
+log_dir: "results/logs/"
+results_dir: "results/plots/"

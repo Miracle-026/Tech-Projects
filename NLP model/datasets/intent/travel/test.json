@@ -1,0 +1,10 @@
+[
+    {
+        "text": "Reserve a flight to Rome",
+        "intent": "book_flight"
+    },
+    {
+        "text": "Cancel my hotel booking",
+        "intent": "cancel_booking"
+    }
+]

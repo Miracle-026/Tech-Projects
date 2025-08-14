@@ -1,0 +1,49 @@
+# Core ML/DL libraries
+torch>=1.9.0
+tensorflow>=2.8.0
+transformers>=4.20.0
+datasets>=2.3.0
+tokenizers>=0.12.0
+
+# NLP libraries
+spacy>=3.4.0
+nltk>=3.7.0
+scikit-learn>=1.1.0
+pandas>=1.4.0
+numpy>=1.21.0
+
+# Continual learning specific
+avalanche-lib>=0.3.0
+quadprog>=0.1.8
+
+# Data handling and visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.8.0
+tqdm>=4.64.0
+wandb>=0.12.0
+
+# Configuration and utilities
+PyYAML>=6.0.0
+hydra-core>=1.2.0
+omegaconf>=2.2.0
+
+# Development and testing
+pytest>=7.1.0
+black>=22.3.0
+flake8>=4.0.0
+mypy>=0.950
+jupyterlab>=3.4.0
+
+# Optional: for advanced models
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+redis>=4.3.0
+
+# Production deployment
+fastapi>=0.78.0
+uvicorn>=0.18.0
+docker>=5.0.0
+
+flask-httpauth==4.8.0
+flask-socketio==5.3.6

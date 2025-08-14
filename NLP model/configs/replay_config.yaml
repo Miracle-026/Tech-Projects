@@ -1,0 +1,20 @@
+# Configuration file for Replay-based Text Classification model
+
+# Model parameters
+memory_size: 1000
+learning_rate: 2e-5
+batch_size: 16
+max_length: 128
+epochs: 3
+device: "CPU:0"
+
+# Dataset settings
+domains:
+  - general
+  - service
+
+# Logging and saving
+verbose: true
+save_dir: "results/models/"
+log_dir: "results/logs/"
+results_dir: "results/plots/"

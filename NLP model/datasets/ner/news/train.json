@@ -1,0 +1,14 @@
+[
+    {
+        "text": "Apple Inc. announced a new product launch in New York.",
+        "entities": [[0, 9, "ORG"], [44, 52, "LOC"]]
+    },
+    {
+        "text": "Microsoft will hold its annual conference in Seattle.",
+        "entities": [[0, 9, "ORG"], [44, 51, "LOC"]]
+    },
+    {
+        "text": "Elon Musk visited Tesla factories in Shanghai.",
+        "entities": [[0, 9, "PER"], [19, 24, "ORG"], [38, 46, "LOC"]]
+    }
+]

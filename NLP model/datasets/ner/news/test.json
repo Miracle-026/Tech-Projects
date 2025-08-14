@@ -1,0 +1,10 @@
+[
+    {
+        "text": "Google is expanding its offices in California.",
+        "entities": [[0, 6, "ORG"], [33, 42, "LOC"]]
+    },
+    {
+        "text": "Jeff Bezos attended a meeting in Washington.",
+        "entities": [[0, 10, "PER"], [33, 42, "LOC"]]
+    }
+]

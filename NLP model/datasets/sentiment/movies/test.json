@@ -1,0 +1,10 @@
+[
+    {
+        "text": "The film had great visuals but a weak story.",
+        "label": 0
+    },
+    {
+        "text": "An inspiring and heartfelt movie.",
+        "label": 1
+    }
+]
